@@ -111,7 +111,7 @@ Recommended Python-based frameworks for common Deep Learning problem solving:
 
 # Deep Learning tools: Netron <a href="https://netron.app">[link]</a>
 
-<iframe src="https://netron.app/?url=https://github.com/onnx/models/raw/main/validated/vision/classification/squeezenet/model/squeezenet1.0-3.onnx" width="1100" height="550" style="-webkit-transform:scale(0.8);-moz-transform-scale(0.8); position: relative; top: -65px; left: -120px"></iframe>
+<img src="/netron.png" style="width: 900px; position: relative">
 
 ---
 
