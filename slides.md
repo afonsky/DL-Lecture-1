@@ -28,7 +28,7 @@ info: >
   available](https://github.com/twitwi/slidev-addon-ultracharger)
 css: windicss
 title: Deep Learning
-subtitle: Deep Learning Intro<br> Bayesian Inference
+subtitle: Deep Learning Intro. Bayesian Inference
 date: 15/01/2024
 venue: HSE
 author: Alexey Boldyrev, Maksim Karpov

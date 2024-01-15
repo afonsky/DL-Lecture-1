@@ -18,7 +18,7 @@ image: ./teaching_team.png
 	* Majid
 		* Tuesdays, 11:10 (from 16/01 - tomorrow)
 	* Tharaa
-		* TBA
+		* Mondays, 09:30 (from 22/01)
 	* Tigran
 		* Saturdays, 16:20 (from 20/01)
 
