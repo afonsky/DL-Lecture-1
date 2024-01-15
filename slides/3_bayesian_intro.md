@@ -277,7 +277,7 @@ $f(\theta|x) \color{red} \propto \color{#006} \theta^x (1 - \theta)^{n-x} \color
 
 * Consider likelihoods and priors that are mathematically convenient in derivation of a posterior. Consider a Beta prior:
   * $\mathrm{Binomial}(x| n, \theta) \propto \theta^x (1 - \theta)^{n-x}$
-  * $\mathrm{Beta}(\alpha, \beta) \propto \theta^{\alpha - } (1 - \theta)^{\beta-1}$
+  * $\mathrm{Beta}(\alpha, \beta) \propto \theta^{\alpha - 1} (1 - \theta)^{\beta-1}$
 
 Then:<br>
 $~~~~f(\theta | x) \propto \theta^x (1 - \theta)^{n-x} \cdot \theta^{\alpha - 1} (1 - \theta)^{\beta-1}\\
@@ -331,7 +331,7 @@ $\ln f_\theta(x) \stackrel{\perp X_i}{=}
 \sum_i \ln \mathrm{Bin}(x_i | n, \theta) = \\\mathrm{const.} + (\sum_i x_i) \cdot \ln\theta + (n^2 - \sum_i x_i) \cdot \ln(1 - \theta)$
 
 * Then the **Fischer Info** is then (use $\mathbb{E}X = \mathbb{E}X_i = np$): $J(\theta) \propto \theta^{-1} (1 - \theta)^{-1}$
-<div class="grid grid-cols-[3fr,2fr]">
+<div class="grid grid-cols-[4fr,2fr] gap-1">
 <div>
 
 * Then Jeffreys' prior of $\theta$ is $f(\theta) \propto \theta^{\frac{1}{2}} (1 - \theta)^{\frac{1}{2}}$
@@ -342,7 +342,7 @@ $\ln f_\theta(x) \stackrel{\perp X_i}{=}
 </div>
 <div>
 <figure>
-  <img src="/binomial_Jeffreys.png" style="width: 450px !important">
+  <img src="/binomial_Jeffreys.png" style="width: 300px !important">
 </figure>
 </div>
 </div>
