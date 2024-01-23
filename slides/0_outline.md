@@ -6,6 +6,6 @@
 
 * <Link to="17">Deep Learning introduction</Link>
 
-* <Link to="21">Bayesian inference</Link>
+* <Link to="26">Bayesian inference</Link>
 
 </div>

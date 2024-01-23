@@ -15,5 +15,3 @@
 
 
 #### Note that the poll will be closed within 2 hours. -->
-
-<br>

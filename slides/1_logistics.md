@@ -91,6 +91,7 @@ image: ./course_tools.png
 
 ## Thanks! 🙏
 </div>
+
 ---
 
 # Lecture Attendance <span v-html="$slidev.configs.date?.replaceAll(' ', '<br/>')"></span>
@@ -205,7 +206,6 @@ image: ./discourse.png
 	* Self enrolment in teams of 1-3 students (using Group Choice Moodle plugin)
 	* 1-student (solo) teams are also allowed
 		* Such students should convince others not to add to their solo-teams
-
 * 1st Kaggle competition will be announced in January
 	* Once the relevant topics have been covered
 

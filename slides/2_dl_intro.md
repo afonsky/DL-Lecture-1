@@ -14,7 +14,7 @@ layout: center
 <div>
   <figure>
     <img src="/car.jpg" style="width: 390px !important">
-    <figcaption style="color:#b3b3b3ff; font-size: 11px;"><br>"Moskvitch 40x" Dashboard
+    <figcaption style="color:#b3b3b3ff; font-size: 11px;"><br>"Moskvitch 40x" dashboard
     </figcaption>
   </figure>
 </div>
