@@ -4,6 +4,17 @@ layout: center
 # Introduction to Deep Learning
 
 ---
+
+# How Do ML and DL Relate to Each Other?
+<br>
+<br>
+<center>
+  <figure>
+    <img src="/What_is_ML.drawio.png" style="width: 400px !important;">
+  </figure>
+</center>
+
+---
 zoom: 0.9
 ---
 

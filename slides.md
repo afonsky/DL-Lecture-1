@@ -13,6 +13,7 @@ background: /logo/mountain.jpg
 highlighter: shiki
 routerMode: hash
 lineNumbers: false
+comark: true
 
 css: unocss
 title: Deep Learning
