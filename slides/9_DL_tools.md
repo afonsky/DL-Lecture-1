@@ -24,9 +24,9 @@ layout: center
 <div>
 <center>
   <figure>
-    <img src="/popular_ml_tools.png" style="width: 700px; position: relative">
+    <img src="/popular_ml_tools_trends.png" style="width: 800px; position: relative">
     <figcaption style="color:#b3b3b3ff; font-size: 11px">Graph source:
-      <a href="https://paperswithcode.com/trends">https://paperswithcode.com/trends</a>
+      <a href="https://trends.google.com/">https://trends.google.com/</a>
     </figcaption>
   </figure>
 </center>
