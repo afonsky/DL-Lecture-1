@@ -353,8 +353,7 @@ zoom: 1.0
 
 <br>
 
-0.1 ⋅ [Home assignments]{style="color:rgba(6, 177, 0, 1)"} + 0.25 ⋅ [Kaggle competitions]{style="color:rgba(6, 177, 0, 1)"} + 0.15 ⋅ [Hackathon (Exam)]{style="color:rgba(6, 177, 0, 1)"}<br> + 0.2 ⋅ [Quizzes]{style="color:rgba(255, 115, 0, 1)"} + 0.15 ⋅ [Midterm Test]{style="color:rgba(255, 115, 0, 1)"} + 0.15 ⋅ [Final Test]{style="color:rgba(255, 115, 0, 1)"}
-
+### 0.2 ⋅ [Home assignments]{style="color:rgba(6, 177, 0, 1)"} + 0.25 ⋅ [Kaggle competitions]{style="color:rgba(6, 177, 0, 1)"} + 0.15 ⋅ [Hackathon (Exam)]{style="color:rgba(6, 177, 0, 1)"}<br> + 0.2 ⋅ [Quizzes]{style="color:rgba(255, 115, 0, 1)"} + 0.2 ⋅ [Midterm Test]{style="color:rgba(255, 115, 0, 1)"}
 <br>
 
 * Where:
@@ -367,7 +366,7 @@ zoom: 1.0
       * Safe Exam Browser is used (please write down your @edu.hse.ru login and password)
 
 ---
-zoom: 0.8
+zoom: 0.82
 ---
 
 # Using LLMs in Machine Learning Course
@@ -388,20 +387,20 @@ zoom: 0.8
 </div>
 
 
- * We permitted the use of LLMs for homework assignments if the following conditions are met:
+ * We permitted the use of LLMs for homework assignments [if the following conditions are met]{style="color:rgba(6, 177, 0, 1)"}:
     1. You must not apply generative models to solve the **entire problem or question**
     1. Generative models should not address the **key idea** of the problem or question
     1. You are obligated to indicate **which parts** of the HW are done using generative models
     1. A **small reflection** section at the end of your solution is mandatory
         1. You must describe **why and how** you selected the prompts, what **advantages** and **disadvantages** of generative models you **noticed** when performing this task
         1. The use of generative models to write such a reflection is prohibited
+           * We're curious to know how you interact with LLMs
 
- * If you used a generative model for finding a solution, you need to provide the link to the service used (browser version, Telegram bot, etc.), network name, the prompt(s) used and how you evaluate the performance of this model
+ * If you used a LLM for finding a solution, you need to provide the link to the service used, LLM name, version and mode (reasoning effort), the prompt(s) used and how you evaluate the performance of this model
 
 ---
 zoom: 0.85
 ---
-
 
 # Note on Hackathon 🏆
 
@@ -431,5 +430,38 @@ zoom: 0.85
     * Trophy prizes or merch for the 🥇,🥈,🥉 places are also expected
 
 ---
+zoom: 1.1
+---
 
-# Changes w.r.t. ML1 Course
+# Missed Classes
+
+* Two lowest grades for **quizzes** are not taken into account.
+  * **There is no retake for quizzes**.
+
+* In case the student misses the **midterm** test for a **valid reason**, the weight of the test is transferred to the hackathon.
+
+* Missing a **hackathon** by a **valid reason**: a student with cumulated grade $\geq 8$ can deserve his (her) rights to miss a hackathon for a justified valid reason verified by the teaching team. In such a case, the final grade will be recalculated by reweighting other elements in the grading formula.
+
+* **Home Assignments**: Only **valid verifiable excuses** are accepted for 1-2 day extensions of Home assignments.
+
+---
+zoom: 1.1
+---
+
+# Other Details Regarding Grades 
+
+### Seminar sctivity bonus
+
+#### In each seminar group, the seminarian can single out individual students for seminar activity, adding a $0.01$ bonus to the final grade.
+
+<br>
+
+### Assessment element defense
+
+#### The teacher or teaching assistant reserves the right to randomly invite any student to defend any assessment element, regardless of plagiarism or suspicion. If the student refuses or fails to defend the work, the grade for this element will be annulled and recorded as "0".
+
+<br>
+
+### Letters of Recommendation
+
+#### A student with cumulated grade $\geq 8$ may ask Alexey and/or Maksim to write a letter of recommendation.

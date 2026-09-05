@@ -83,7 +83,17 @@ $$
 </v-click>
 </div>
 </div>
+
+<div class="grid grid-cols-[2fr_2fr]">
+<div>
 <v-click at="5">
 
 $\frac{\partial{f}}{\partial{x}} = 2~~~~~~ \boxed{\frac{\partial{f}}{\partial{y}} = 3 + 2 = 5}~~~~~ \frac{\partial{f}}{\partial{z}} = 0$
 </v-click>
+</div>
+<div>
+<br>
+
+#### Backpropagation interactive demo https://xnought.github.io/backprop-explainer/
+</div>
+</div>
