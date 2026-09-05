@@ -70,5 +70,9 @@ src: ./slides/9_DL_tools.md
 ---
 
 ---
+src: ./slides/10_conclusions.md
+---
+
+---
 src: ./slides/0_end.md
 ---

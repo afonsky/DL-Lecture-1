@@ -15,6 +15,261 @@ layout: center
 </center>
 
 ---
+zoom: 1.0
+---
+
+# DL is not "Classical ML with More Layers"
+
+#### The first difference is **who designs the features**
+
+<style scoped>
+.pl { display: flex; align-items: center; gap: 7px; margin: 2px 0; }
+.bx { border: 2px solid; border-radius: 8px; padding: 5px 9px; font-size: 13px;
+      text-align: center; line-height: 1.2; }
+.bx small { font-size: 10.5px; color: #555; }
+.ar { font-size: 20px; color: #999; }
+.cml { border-color: #2b7bba; background: #eaf3fa; }
+.hum { border-color: #2b7bba; background: #c9e0f4; font-weight: 600; }
+.dlx { border-color: #e8743b; background: #fdeee6; }
+.lrn { border-color: #e8743b; background: #f8d5c1; font-weight: 600; }
+.tag { font-size: 14px; font-weight: 700; width: 108px; }
+.note { font-size: 12px; color: #666; margin: 1px 0 10px 118px; }
+</style>
+
+<div class="pl">
+  <div class="tag" style="color:#2b7bba">Classical ML</div>
+  <div class="bx cml">Raw data</div><div class="ar">→</div>
+  <div class="bx hum">Hand-crafted features<br><small>SIFT / HOG, MFCC, TF-IDF, <br>ratios, lags, domain rules</small></div><div class="ar">→</div>
+  <div class="bx cml">Learning algorithm<br><small>SVM, Random Forest, <br>Boosting, Logistic Regression</small></div><div class="ar">→</div>
+  <div class="bx cml">Output</div>
+</div>
+<div class="note">↑ months of work by a <b>domain expert</b> &nbsp;·&nbsp; the model itself is shallow and only <b>one</b> stage is trained</div>
+
+<br>
+
+<div class="pl">
+  <div class="tag" style="color:#e8743b">Deep Learning</div>
+  <div class="bx dlx">Raw data</div><div class="ar">→</div>
+  <div class="bx lrn">Layer 1<br><small>edges,<br>n-grams</small></div><div class="ar">→</div>
+  <div class="bx lrn">Layer 2<br><small>parts,<br>phrases</small></div><div class="ar">→</div>
+  <div class="bx lrn">Layer 3<br><small>objects,<br>meaning</small></div><div class="ar">→</div>
+  <div class="bx dlx">Output</div>
+</div>
+<div class="note">↑ a <b>hierarchy of representations learned from the data</b> &nbsp;·&nbsp; <b>every</b> stage is trained together, end-to-end</div>
+
+<v-clicks>
+
+* Classical ML learns a **decision rule** on features you give it. DL also learns the **features**
+* Each layer transforms the previous one — simple, non-linear modules composed into a deep stack
+* Consequence: DL replaces *feature engineering* with *architecture design* + *data collection*
+
+</v-clicks>
+
+<div style="font-size: 12px; margin-top: 6px">
+See: LeCun, Bengio &amp; Hinton, <a href="https://www.nature.com/articles/nature14539"><em>Deep learning</em>, Nature 521 (2015)</a>,
+Bengio et al., <a href="https://arxiv.org/abs/1206.5538">Representation Learning: A Review and New Perspectives</a><br>
+<a href="https://atcold.github.io/NYU-DLSP21/">Yann LeCun's NYU Deep Learning course</a>
+</div>
+
+---
+zoom: 1.0
+---
+
+# Classical ML vs DL: What Changes in Practice
+
+<style scoped>
+table { font-size: 15px; border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #ccc; padding: 5px 9px; vertical-align: top; text-align: left; }
+th { background: #f0f0f0; font-weight: 700; }
+td:nth-child(2) { background: #f4f9fd; }
+td:nth-child(3) { background: #fef6f2; }
+</style>
+
+<br>
+
+| | **Classical ML** | **Deep Learning** |
+|---|---|---|
+| **Features** | Engineered by a human | Learned from data |
+| **What you tune** | Features + a few hyper-parameters | Architecture, optimizer, learning rate, data |
+| **Data appetite** | Works from $10^2 - 10^4$ examples | Usually needs $10^4 - 10^9$ examples |
+| **Hardware** | CPU is enough | GPU / TPU, often many of them |
+| **Scaling with data** | Performance **plateaus** | Performance keeps **improving** |
+| **Best suited to** | Tabular data, small clean datasets | Perceptual & sequential data: images, audio, text, video, graphs |
+| **Interpretability** | Often high (tree paths, coefficients) | Low by default — needs separate tooling |
+| **Reuse** | Retrain per task | **Transfer learning**: pre-train once, fine-tune everywhere |
+| **Engineering style** | Write the pipeline | **"Software 2.0"**: curate data, let the optimizer write the weights |
+
+<br>
+
+<div style="font-size: 12.5px; margin-top: 8px">
+See: Andrej Karpathy, <a href="https://karpathy.medium.com/software-2-0-a64152b37c35">Software 2.0</a> ·
+Sebastian Raschka, <a href="https://www.youtube.com/watch?v=1nqCZqDYPp0">L1.0 Intro to Deep Learning</a>
+and <a href="https://sebastianraschka.com/blog/2021/dl-course.html">the full DL course (Stat 453)</a>
+</div>
+
+---
+zoom: 0.9
+---
+
+# Why Did Deep Learning Take Off?
+
+#### Not one new idea — the same ideas met **data**, **compute** and better **algorithms**
+
+<div class="grid grid-cols-[5fr_5fr] gap-6">
+<div>
+
+<br>
+<br>
+
+<svg viewBox="0 0 420 165" style="width: 420px">
+  <line x1="42" y1="140" x2="405" y2="140" stroke="#666" stroke-width="1.5"/>
+  <line x1="42" y1="140" x2="42" y2="18" stroke="#666" stroke-width="1.5"/>
+  <text x="220" y="158" style="font-size:11px" fill="#444" text-anchor="middle">amount of labeled data →</text>
+  <text x="14" y="80" style="font-size:11px" fill="#444" text-anchor="middle" transform="rotate(-90 14 80)">performance →</text>
+  <path d="M46,133 C 96,104 136,90 186,88 C 256,86 326,85 400,85" fill="none" stroke="#2b7bba" stroke-width="2.5"/>
+  <path d="M46,136 C 106,120 166,96 246,74 C 306,58 356,52 400,50" fill="none" stroke="#e8743b" stroke-width="2.5" stroke-dasharray="5 3"/>
+  <path d="M46,138 C 126,131 186,106 266,66 C 326,36 366,30 400,26" fill="none" stroke="#e8743b" stroke-width="2.5"/>
+  <text x="330" y="79" style="font-size:10.5px" fill="#2b7bba">classical ML</text>
+  <text x="336" y="64" style="font-size:10.5px" fill="#e8743b">medium NN</text>
+  <text x="330" y="20" style="font-size:10.5px" fill="#e8743b">large NN</text>
+</svg>
+
+<div style="font-size: 12px; color: #555; margin-top: -4px">
+Classical methods saturate; larger networks keep converting extra data into extra accuracy.<br>
+Redrawn after <a href="https://www.deeplearning.ai/courses/deep-learning-specialization/">Andrew Ng, <em>Deep Learning Specialization</em></a>.<br><br>
+<br>
+
+See also:<br>Empirical scaling laws: Hestness et al.,
+<a href="https://arxiv.org/abs/1712.00409">Deep Learning Scaling is Predictable, Empirically</a>
+</div>
+</div>
+<div>
+
+<v-clicks>
+
+* **Data** — the internet, ImageNet, smartphones: labeled datasets grew by orders of magnitude
+* **Compute** — GPUs made training a large net a matter of days instead of decades
+* **Algorithms** — ReLU, better initialization, batch normalization, Adam, dropout, residual connections, attention
+* **Open tooling** — PyTorch / TensorFlow / JAX turned research code into a few lines
+* **Consequence:** with classical ML "get more data" stops helping at some point. With DL it is a **strategy**
+
+</v-clicks>
+</div>
+</div>
+
+---
+zoom: 0.99
+---
+
+# Deep Learning Breaks Some Classical Rules
+
+<div class="grid grid-cols-[5fr_4fr] gap-6">
+<div>
+
+#### The classical picture (by [Abu-Mostafa](https://work.caltech.edu/telecourse.html)):
+
+* A model has a **capacity**; more capacity → better fit, worse generalization
+* So: keep the model small, regularize, stop at the bottom of the U-curve
+
+<v-click at="1">
+
+#### What actually happens in DL:
+
+* Networks with **more parameters than training points** still generalize well
+* The U-curve is only the *first half* of the story — a **second descent** follows
+* Big models + heavy data + implicit regularization from SGD
+
+</v-click>
+</div>
+<div>
+<br>
+<br>
+<svg viewBox="0 0 420 175" style="width: 450px">
+  <line x1="42" y1="150" x2="405" y2="150" stroke="#666" stroke-width="1.5"/>
+  <line x1="42" y1="150" x2="42" y2="18" stroke="#666" stroke-width="1.5"/>
+  <text x="225" y="168" style="font-size:11px" fill="#444" text-anchor="middle">model size / number of parameters →</text>
+  <text x="14" y="85" style="font-size:11px" fill="#444" text-anchor="middle" transform="rotate(-90 14 85)">test error →</text>
+  <line x1="185" y1="24" x2="185" y2="150" stroke="#999" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="185" y="16" style="font-size:10px" fill="#666" text-anchor="middle">interpolation threshold</text>
+  <path d="M48,32 C 78,100 96,115 118,116 C 148,117 168,60 185,42" fill="none" stroke="#2b7bba" stroke-width="2.5"/>
+  <path d="M185,42 C 215,32 250,88 300,110 C 340,124 375,128 400,130" fill="none" stroke="#e8743b" stroke-width="2.5"/>
+  <text x="80" y="140" style="font-size:10.5px" fill="#2b7bba">classical regime</text>
+  <text x="255" y="52" style="font-size:10.5px" fill="#e8743b">modern regime</text>
+  <text x="255" y="66" style="font-size:10.5px" fill="#e8743b">(over-parameterized)</text>
+</svg>
+
+<div style="font-size: 12px; color: #555">
+The "double descent" risk curve.
+
+<br>
+<br>
+<br>
+<br>
+
+<div style="font-size: 12px; margin-top: 6px">
+See also: Yaser Abu-Mostafa, <a href="https://www.youtube.com/playlist?list=PLD63A284B7615313A"><em>Learning From Data</em> (Caltech CS 156)</a> —
+start with <a href="https://www.youtube.com/watch?v=mbyG85GZ0PI">Lecture 1: The Learning Problem</a><br>
+Zhang et al., <a href="https://arxiv.org/abs/1611.03530">Understanding Deep Learning Requires Rethinking Generalization</a><br>
+Nakkiran et al., <a href="https://arxiv.org/abs/1912.02292">Deep Double Descent</a>
+</div>
+</div>
+</div>
+</div>
+
+---
+zoom: 0.9
+---
+
+# When Classical ML Is Still the Right Answer
+
+#### "Deep" is a tool, not a default. Choose it when the data is **raw and perceptual**
+
+<div class="grid grid-cols-[1fr_1fr] gap-8">
+<div>
+
+#### Prefer classical ML when:
+
+<v-clicks>
+
+* The data is **tabular** — gradient boosting (XGBoost / LightGBM / CatBoost) still usually wins
+* You have **hundreds**, not millions, of examples
+* You must **explain** every decision (medicine, credit scoring, law)
+* You need CPU-only, millisecond inference
+* You need a result **this week**
+
+</v-clicks>
+</div>
+<div>
+
+#### Prefer deep learning when:
+
+<v-clicks>
+
+* Inputs are **images, audio, text, video, graphs** — features are hard to name
+* A **pre-trained model** for your domain already exists
+* Data is plentiful, or keeps arriving
+* The task is **generative** or sequential
+
+</v-clicks>
+</div>
+</div>
+
+<br>
+
+<v-click>
+
+#### In practice: always build a **simple baseline first**, then show that deep learning beats it
+
+</v-click>
+
+<br>
+<div style="font-size: 12px; margin-top: 8px">
+See also: Grinsztajn et al., <a href="https://arxiv.org/abs/2207.08815">Why do tree-based models still outperform deep learning on tabular data?</a> ·
+Andrej Karpathy, <a href="http://karpathy.github.io/2019/04/25/recipe/">A Recipe for Training Neural Networks</a> ·
+Josh Starmer, <a href="https://www.youtube.com/watch?v=CqOfi41LfDw">StatQuest: The Essential Main Ideas of Neural Networks</a>
+</div>
+
+---
 zoom: 0.9
 ---
 
