@@ -93,7 +93,9 @@ $\frac{\partial{f}}{\partial{x}} = 2~~~~~~ \boxed{\frac{\partial{f}}{\partial{y}
 </div>
 <div>
 <br>
+<v-click at="6">
 
 #### Backpropagation interactive demo https://xnought.github.io/backprop-explainer/
+</v-click>
 </div>
 </div>
