@@ -397,7 +397,7 @@ Artificial neural networks (ANNs) are **inspired by** the biological neural netw
 zoom: 0.85
 ---
 
-# Why Deep Learning model?
+# Why Deep Learning Model?
 <v-click at="1">
 
 #### Because neural networks are universal approximators of **continuous univariate functions**

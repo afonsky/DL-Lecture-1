@@ -369,7 +369,7 @@ zoom: 1.0
 zoom: 0.82
 ---
 
-# Using LLMs in Machine Learning Course
+# Using LLMs in Deep Learning Course
 
 * [Vibe coding](https://en.wikipedia.org/wiki/Vibe_coding) is promising and points to a new paradigm for interacting with computers
     * See [Andrej Karpathy's talk](https://www.youtube.com/watch?v=LCEmiRjPEtQ) at AI Startup School (2025)
@@ -399,7 +399,7 @@ zoom: 0.82
  * If you used a LLM for finding a solution, you need to provide the link to the service used, LLM name, version and mode (reasoning effort), the prompt(s) used and how you evaluate the performance of this model
 
 ---
-zoom: 0.85
+zoom: 0.89
 ---
 
 # Note on Hackathon 🏆
@@ -407,8 +407,8 @@ zoom: 0.85
 <div class="grid grid-cols-[5fr_2fr] gap-10">
 <div>
 
-* We consider our course to be an overview and<br> practice-oriented course in machine learning
-* You will have many opportunities to practise solving specific problems in standalone Colab notebooks and Kaggle competitions
+* We consider our course as an **overview** and **practice-oriented** course in deep learning
+* You will have many opportunities to practice solving specific problems in standalone Colab notebooks and Kaggle competitions
 * You can demonstrate the skills you have acquired in hackathon(s) (the first one will be in December)
 </div>
 <div>
@@ -427,7 +427,6 @@ zoom: 0.85
     * 🥈place: you will receive 10 points for any **3** Quizzes or Home Assignments
     * 🥉place: you will receive 10 points for any **2** Quizzes or Home Assignments
     * 🏅4-8 places: you will receive 10 points for any **1** Quiz or Home Assignment
-    * Trophy prizes or merch for the 🥇,🥈,🥉 places are also expected
 
 ---
 zoom: 1.1
@@ -445,7 +444,7 @@ zoom: 1.1
 * **Home Assignments**: Only **valid verifiable excuses** are accepted for 1-2 day extensions of Home assignments.
 
 ---
-zoom: 1.1
+zoom: 0.92
 ---
 
 # Other Details Regarding Grades 
@@ -459,6 +458,12 @@ zoom: 1.1
 ### Assessment element defense
 
 #### The teacher or teaching assistant reserves the right to randomly invite any student to defend any assessment element, regardless of plagiarism or suspicion. If the student refuses or fails to defend the work, the grade for this element will be annulled and recorded as "0".
+
+<br>
+
+### Retake rules
+
+#### On the first and second retake the "midterm test" is retaken and the cumulative course grade is taken into consideration. In case of receiving an unsatisfactory final grade after the first retake, the student may refuse to participate in the second retake and repeat the course according to the individual curricula.
 
 <br>
 

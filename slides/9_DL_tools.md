@@ -1,11 +1,11 @@
 ---
 layout: center
 ---
-# Deep Learning tools
+# Deep Learning Tools
 
 ---
 
-# Deep Learning tools
+# Deep Learning Tools
 <div>
 <center>
   <figure>
@@ -19,7 +19,7 @@ layout: center
 
 ---
 
-# Deep Learning tools
+# Deep Learning Tools
 
 <div>
 <center>
@@ -95,6 +95,6 @@ Recommended Python-based frameworks for common Deep Learning problem solving:
 
 ---
 
-# Deep Learning tools: Tensorflow Playground <a href="https://playground.tensorflow.org">[link]</a>
+# Deep Learning Tools: Tensorflow Playground <a href="https://playground.tensorflow.org">[link]</a>
 
 <iframe src="https://playground.tensorflow.org" width="1100" height="550" style="-webkit-transform:scale(0.8);-moz-transform-scale(0.8); position: relative; top: -65px; left: -120px"></iframe>
