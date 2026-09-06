@@ -449,7 +449,7 @@ zoom: 0.92
 
 # Other Details Regarding Grades 
 
-### Seminar sctivity bonus
+### Seminar activity bonus
 
 #### In each seminar group, the seminarian can single out individual students for seminar activity, adding a $0.01$ bonus to the final grade.
 
