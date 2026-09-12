@@ -310,8 +310,8 @@ zoom: 0.9
 <v-clicks>
 <small>In ANN:</small>
 
-* <small>"**Dendrites**" are connections, which carry information<br> (learnt coefficients)</small>
-* <small>"**Synapses**" are activation functions, which augment or filter information flow; and "**soma**" acts as the summation function</small>
+* <small>"**Synapses**" are the **weights**: learnt strengths of the connections</small>
+* <small>"**Dendrites**" carry the weighted inputs to the "**soma**", which sums them; the **activation function** models the neuron's **firing rate**</small>
 
 </v-clicks>
 </div>
@@ -400,7 +400,7 @@ zoom: 0.85
 # Why Deep Learning Model?
 <v-click at="1">
 
-#### Because neural networks are universal approximators of **continuous univariate functions**
+#### Because neural networks are universal approximators of **continuous multivariate functions** on compact domains
 </v-click>
 <br>
 
@@ -422,7 +422,7 @@ zoom: 0.85
 
 See also:<br>
 #### [arXiv:1710.11278 (2017, ReLU, minimal width)](https://arxiv.org/abs/1710.11278)
-#### [Zhou (2020, CNN, bounded width and depth)](https://www.sciencedirect.com/science/article/pii/S1063520318302045)
+#### [Zhou (2020, CNN, arbitrary depth)](https://www.sciencedirect.com/science/article/pii/S1063520318302045)
 </v-click>
 </div>
 <div>

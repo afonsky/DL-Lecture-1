@@ -44,10 +44,51 @@ h4 { margin-bottom: 0.25em; }
 </v-clicks>
 </div>
 </div>
+
+---
+zoom: 0.9
+---
+
+# Conclusions: How Neural Networks Work
+
+<style scoped>
+li { line-height: 1.3; margin: 0.28em 0; }
+ul { margin: 0.2em 0; }
+h4 { margin-bottom: 0.25em; }
+</style>
+
+<div class="grid grid-cols-[1fr_1fr] gap-7">
+<div>
+
+#### What a network computes
+
+<v-clicks>
+
+* A neuron takes a **weighted sum** of its inputs plus a **bias**, then applies a **non-linear activation** (ReLU, sigmoid, tanh, …)
+* Without the non-linearity, stacked layers collapse into **one linear model**
+* **Hidden layers** build new features from the inputs, even products such as $X_1 X_2$
+* For classification, **softmax** turns the outputs into class probabilities
+
+</v-clicks>
+</div>
+<div>
+
+#### How it learns
+
+<v-clicks>
+
+* Training means finding the weights that minimize a **loss**, e.g. squared error
+* **Gradient descent** takes small steps against the gradient; the **learning rate** sets the step size
+* The loss is **non-convex**, so the starting point (**initialization**) matters
+* **Backpropagation** computes every gradient with the **chain rule**; PyTorch, TensorFlow and JAX do it automatically
+
+</v-clicks>
+</div>
+</div>
 <br>
 <v-click>
 
-#### Next lectures: how these blocks are actually built and trained — layers, activations, loss functions, gradient descent and backpropagation
+#### Next lectures: each building block in depth, from loss functions and optimizers to convolutional, recurrent and attention layers
 
 </v-click>
 

@@ -70,7 +70,7 @@ $f = a \cdot b$
 <v-click at="3">
 
 Local gradients:<br>
-$\frac{\partial{a}}{\partial{x}} = 1$ $~~~\frac{\partial{a}}{\partial{x}} = 1$
+$\frac{\partial{a}}{\partial{x}} = 1$ $~~~\frac{\partial{a}}{\partial{y}} = 1$
 
 $\frac{\partial{b}}{\partial{y}} = \boldsymbol{1} (y > z) = 1$ $~~~\frac{\partial{b}}{\partial{z}} = \boldsymbol{1} (y < z) = 0$
 </v-click>

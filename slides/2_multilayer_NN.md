@@ -26,6 +26,6 @@ $f_m (X) = \mathrm{Pr}(Y = m | X) = \frac{e^{Z_m}}{\sum_{l=0}^9 e^{Z_l}}$ (**sof
   </figure>
 <br>
 
-Notation:<br> $W_i$ - **weights** (coefficients), $B$ - **bias** (intercept)
+Notation:<br> $\mathbf{W}_1, \mathbf{W}_2, \mathbf{B}$ - **weight matrices** between consecutive layers, each including that layer's **biases** (intercepts)
 </div>
 </div>
